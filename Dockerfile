@@ -8,6 +8,7 @@ RUN wget https://github.com/Activiti/Activiti/releases/download/activiti-6.0.0/a
         unzip /tmp/activiti.zip -d /tmp && \
         unzip /tmp/activiti-6.0.0/wars/activiti-app.war -d ${CATALINA_HOME}/webapps/activiti-app && \
         unzip /tmp/activiti-6.0.0/wars/activiti-rest.war -d ${CATALINA_HOME}/webapps/activiti-rest && \
+        unzip /tmp/activiti-6.0.0/wars/activiti-admin.war -d ${CATALINA_HOME}/webapps/activiti-admin && \
         rm -rf /tmp/activiti*
 
 RUN wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${MYSQL_CONNECTOR_JAVA_VERSION}.zip -O /tmp/mysql-connector-java.zip && \
